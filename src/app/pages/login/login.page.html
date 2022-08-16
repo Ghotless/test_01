@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="https://cdn-icons-png.flaticon.com/512/16/16363.png?w=740&t=st=1660676500~exp=1660677100~hmac=e4342c3b623b792472c0472b6027af6fdeea15d61f577ff292dd353f3d585e00" />
+    <ion-card-header>
+      <ion-card-subtitle>LOGIN</ion-card-subtitle>
+      <ion-card-title>FORMULARIO DE INGRESO</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+
+      <ion-item> <!-- asocia label con un input -->
+        <ion-label position="stacked">Usuario</ion-label>
+        <ion-input placeholder="Ingrese usuario" type="text" [(ngModel)]="user"></ion-input>
+      </ion-item>
+      <ion-item> <!-- asocia label con un input -->
+        <ion-label position="stacked">Contraseña</ion-label>
+        <ion-input placeholder="Ingrese contraseña" type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <ion-button color="success" (click)="login()">INGRESAR</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
